@@ -1,0 +1,7 @@
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\Xprema.ConnectorLayer\bin\Debug\Xprema.ConnectorLayer.dll
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\Xprema.ConnectorLayer\bin\Debug\Xprema.ConnectorLayer.pdb
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\Xprema.ConnectorLayer\bin\Debug\Xprema.DataLayer.dll
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\Xprema.ConnectorLayer\bin\Debug\Xprema.DataLayer.pdb
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\Xprema.ConnectorLayer\obj\Debug\Xprema.ConnectorLayer.csprojResolveAssemblyReference.cache
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\Xprema.ConnectorLayer\obj\Debug\Xprema.ConnectorLayer.dll
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\Xprema.ConnectorLayer\obj\Debug\Xprema.ConnectorLayer.pdb

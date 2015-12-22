@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="yes"?>
+<db xmlns="http://tempuri.org/db.xsd">
+  <ItemCategory>
+    <ID>1</ID>
+    <CategoryName>test</CategoryName>
+    <Description>2222</Description>
+  </ItemCategory>
+  <ItemCategory>
+    <ID>2</ID>
+    <CategoryName>2222</CategoryName>
+    <Description>2222</Description>
+  </ItemCategory>
+</db>

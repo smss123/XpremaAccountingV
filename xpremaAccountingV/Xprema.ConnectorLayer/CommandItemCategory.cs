@@ -8,10 +8,10 @@ namespace Xprema.ConnectorLayer
     {
         public bool NewItemCategory(db.ItemCategoryRow row)
         {
-            var r = XCommander._db.ItemCategory.NewItemCategoryRow();
-            row.CategoryName = row.CategoryName;
-            row.Description = row.Description;
-            XCommander._db.ItemCategory.AddItemCategoryRow(r);
+            //var r = XCommander._db.ItemCategory.NewItemCategoryRow();
+            //row.CategoryName = row.CategoryName;
+            //row.Description = row.Description;
+            XCommander._db.ItemCategory.AddItemCategoryRow(row);
             XCommander.Commit();
             return true;
             

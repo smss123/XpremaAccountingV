@@ -1,0 +1,5 @@
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\Xprema.DataLayer\bin\Debug\Xprema.DataLayer.dll
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\Xprema.DataLayer\bin\Debug\Xprema.DataLayer.pdb
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\Xprema.DataLayer\obj\Debug\Xprema.DataLayer.dll
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\Xprema.DataLayer\obj\Debug\Xprema.DataLayer.pdb
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\Xprema.DataLayer\obj\Debug\Xprema.DataLayer.csprojResolveAssemblyReference.cache

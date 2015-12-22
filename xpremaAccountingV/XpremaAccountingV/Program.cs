@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Xprema.DataLayer;
+using XpremaAccountingV.ItemsForms;
 
 namespace XpremaAccountingV
 {
@@ -14,9 +16,10 @@ namespace XpremaAccountingV
         [STAThread]
         static void Main()
         {
+            XCommander.ReadFile();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new manageItemCategoryFrm());
         }
     }
 }

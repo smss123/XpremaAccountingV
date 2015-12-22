@@ -40,6 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="db.cs">
+      <DependentUpon>db.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="db.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

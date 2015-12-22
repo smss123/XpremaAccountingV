@@ -42,6 +42,9 @@
     <Compile Include="CommandItemCategory.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="CommandItems.cs" />
+    <Compile Include="CommandStoreTransaction.cs" />
+    <Compile Include="CommandStors.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

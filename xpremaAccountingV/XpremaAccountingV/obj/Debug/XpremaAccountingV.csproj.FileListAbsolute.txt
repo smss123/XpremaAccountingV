@@ -1,0 +1,17 @@
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\bin\Debug\XpremaAccountingV.exe.config
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\bin\Debug\XpremaAccountingV.exe
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\bin\Debug\XpremaAccountingV.pdb
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\obj\Debug\XpremaAccountingV.csprojResolveAssemblyReference.cache
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\obj\Debug\XpremaAccountingV.Properties.Resources.resources
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\obj\Debug\XpremaAccountingV.csproj.GenerateResource.Cache
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\obj\Debug\XpremaAccountingV.exe
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\obj\Debug\XpremaAccountingV.pdb
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\obj\Debug\XpremaAccountingV.MainFrm.resources
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\obj\Debug\XpremaAccountingV.exe.licenses
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\bin\Debug\Xprema.ConnectorLayer.dll
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\bin\Debug\Xprema.DataLayer.dll
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\bin\Debug\Xprema.ConnectorLayer.pdb
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\bin\Debug\Xprema.DataLayer.pdb
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\obj\Debug\XpremaAccountingV.ItemsForms.AddItemCategoryFrm.resources
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\obj\Debug\XpremaAccountingV.ItemsForms.EditItemCategoryFrm.resources
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\obj\Debug\XpremaAccountingV.ItemsForms.manageItemCategoryFrm.resources
