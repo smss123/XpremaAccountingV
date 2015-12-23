@@ -7,7 +7,29 @@
   </ItemCategory>
   <ItemCategory>
     <ID>2</ID>
-    <CategoryName>2222</CategoryName>
-    <Description>2222</Description>
+    <CategoryName>123</CategoryName>
+    <Description>يييي</Description>
   </ItemCategory>
+  <Items>
+    <ID>1</ID>
+    <ItemBasicName>محمود</ItemBasicName>
+    <ItemTradeName>محمد</ItemTradeName>
+    <ItemUnit>15</ItemUnit>
+    <ItemPayAmount>20</ItemPayAmount>
+    <ItemSaleAmount>30</ItemSaleAmount>
+    <Description>11111111</Description>
+    <CategoryID>1</CategoryID>
+    <ItemNumber>15</ItemNumber>
+  </Items>
+  <Items>
+    <ID>2</ID>
+    <ItemBasicName>22</ItemBasicName>
+    <ItemTradeName>22</ItemTradeName>
+    <ItemUnit>unti</ItemUnit>
+    <ItemPayAmount>18</ItemPayAmount>
+    <ItemSaleAmount>17</ItemSaleAmount>
+    <Description>12</Description>
+    <CategoryID>1</CategoryID>
+    <ItemNumber>16</ItemNumber>
+  </Items>
 </db>

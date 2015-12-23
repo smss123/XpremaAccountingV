@@ -9,18 +9,18 @@ namespace Xprema.ConnectorLayer
 {
    public class CommandItems
     {
-        public bool NewStor(db.ItemsRow row)
+        public bool NewItems(db.ItemsRow row)
         {
-            var r = XCommander._db.Items.NewItemsRow();
-            row.ItemBasicName = row.ItemBasicName;
-            row.ItemTradeName = row.ItemTradeName;
-            row.ItemUnit = row.ItemUnit;
-            row.ItemPayAmount = row.ItemPayAmount;
-            row.ItemSaleAmount = row.ItemSaleAmount;
-            row.Description = row.Description;
-            row.CategoryID = row.CategoryID;
-            row.ItemNumber = row.ItemNumber;
-            XCommander._db.Items.AddItemsRow(r);
+            //var r = XCommander._db.Items.NewItemsRow();
+            //row.ItemBasicName = row.ItemBasicName;
+            //row.ItemTradeName = row.ItemTradeName;
+            //row.ItemUnit = row.ItemUnit;
+            //row.ItemPayAmount = row.ItemPayAmount;
+            //row.ItemSaleAmount = row.ItemSaleAmount;
+            //row.Description = row.Description;
+            //row.CategoryID = row.CategoryID;
+            //row.ItemNumber = row.ItemNumber;
+            XCommander._db.Items.AddItemsRow(row);
             XCommander.Commit();
             return true;
 

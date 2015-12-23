@@ -53,7 +53,7 @@
             this.colID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colCategoryName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDescription = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.EditBtn = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.حذف = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemButtonEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.repositoryItemButtonEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             ((System.ComponentModel.ISupportInitialize)(this.itemCategoryRowBindingSource)).BeginInit();
@@ -231,7 +231,7 @@
             this.colID,
             this.colCategoryName,
             this.colDescription,
-            this.EditBtn});
+            this.حذف});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.False;
@@ -266,21 +266,22 @@
             this.colDescription.VisibleIndex = 1;
             this.colDescription.Width = 293;
             // 
-            // EditBtn
+            // حذف
             // 
-            this.EditBtn.Caption = "Delete";
-            this.EditBtn.ColumnEdit = this.repositoryItemButtonEdit1;
-            this.EditBtn.FieldName = "Table";
-            this.EditBtn.Name = "EditBtn";
-            this.EditBtn.Visible = true;
-            this.EditBtn.VisibleIndex = 2;
-            this.EditBtn.Width = 94;
+            this.حذف.Caption = "حذف";
+            this.حذف.ColumnEdit = this.repositoryItemButtonEdit1;
+            this.حذف.FieldName = "Table";
+            this.حذف.Image = ((System.Drawing.Image)(resources.GetObject("حذف.Image")));
+            this.حذف.Name = "حذف";
+            this.حذف.Visible = true;
+            this.حذف.VisibleIndex = 2;
+            this.حذف.Width = 94;
             // 
             // repositoryItemButtonEdit1
             // 
             this.repositoryItemButtonEdit1.AutoHeight = false;
             this.repositoryItemButtonEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Delete, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("repositoryItemButtonEdit1.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Delete, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("repositoryItemButtonEdit1.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, "", null, null, false)});
             this.repositoryItemButtonEdit1.Name = "repositoryItemButtonEdit1";
             this.repositoryItemButtonEdit1.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.repositoryItemButtonEdit1.Click += new System.EventHandler(this.repositoryItemButtonEdit1_Click);
@@ -341,7 +342,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn colID;
         private DevExpress.XtraGrid.Columns.GridColumn colCategoryName;
         private DevExpress.XtraGrid.Columns.GridColumn colDescription;
-        private DevExpress.XtraGrid.Columns.GridColumn EditBtn;
+        private DevExpress.XtraGrid.Columns.GridColumn حذف;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit1;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit2;
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;

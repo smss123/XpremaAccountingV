@@ -32,6 +32,7 @@
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.AddBtn = new System.Windows.Forms.Button();
             this.descriptionTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.db_ItemCategoryRowBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.categoryNameTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -40,10 +41,10 @@
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.simpleSeparator2 = new DevExpress.XtraLayout.SimpleSeparator();
-            this.db_ItemCategoryRowBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.descriptionTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.db_ItemCategoryRowBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryNameTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
@@ -52,7 +53,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.db_ItemCategoryRowBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -88,6 +88,10 @@
             this.descriptionTextEdit.Size = new System.Drawing.Size(224, 20);
             this.descriptionTextEdit.StyleController = this.layoutControl1;
             this.descriptionTextEdit.TabIndex = 6;
+            // 
+            // db_ItemCategoryRowBindingSource
+            // 
+            this.db_ItemCategoryRowBindingSource.DataSource = typeof(Xprema.DataLayer.db.ItemCategoryRow);
             // 
             // categoryNameTextEdit
             // 
@@ -163,10 +167,6 @@
             this.simpleSeparator2.Name = "simpleSeparator2";
             this.simpleSeparator2.Size = new System.Drawing.Size(297, 1);
             // 
-            // db_ItemCategoryRowBindingSource
-            // 
-            this.db_ItemCategoryRowBindingSource.DataSource = typeof(Xprema.DataLayer.db.ItemCategoryRow);
-            // 
             // AddItemCategoryFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -182,6 +182,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.descriptionTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.db_ItemCategoryRowBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryNameTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
@@ -190,7 +191,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.db_ItemCategoryRowBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

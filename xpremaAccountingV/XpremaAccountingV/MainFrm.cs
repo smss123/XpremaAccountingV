@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using XpremaAccountingV.ItemsForms;
 
 namespace XpremaAccountingV
 {
@@ -16,6 +17,12 @@ namespace XpremaAccountingV
         public MainFrm()
         {
             InitializeComponent();
+        }
+
+        private void ItemBtn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmManageITEM frm = new FrmManageITEM();
+            frm.ShowDialog();
         }
     }
 }

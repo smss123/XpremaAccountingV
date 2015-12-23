@@ -15,3 +15,6 @@ C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\Xpr
 C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\obj\Debug\XpremaAccountingV.ItemsForms.AddItemCategoryFrm.resources
 C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\obj\Debug\XpremaAccountingV.ItemsForms.EditItemCategoryFrm.resources
 C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\obj\Debug\XpremaAccountingV.ItemsForms.manageItemCategoryFrm.resources
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\obj\Debug\XpremaAccountingV.ItemsForms.AddItemFrm.resources
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\obj\Debug\XpremaAccountingV.ItemsForms.FrmManageITEM.resources
+C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\obj\Debug\XpremaAccountingV.StorsForms.AddStor.resources

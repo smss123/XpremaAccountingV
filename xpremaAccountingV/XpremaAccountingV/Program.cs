@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.LookAndFeel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,9 +18,12 @@ namespace XpremaAccountingV
         static void Main()
         {
             XCommander.ReadFile();
+            DevExpress.Skins.SkinManager.EnableFormSkins();
+            DevExpress.UserSkins.BonusSkins.Register();
+            UserLookAndFeel.Default.SetSkinStyle("Visual Studio 2013");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new manageItemCategoryFrm());
+            Application.Run(new MainFrm());
         }
     }
 }

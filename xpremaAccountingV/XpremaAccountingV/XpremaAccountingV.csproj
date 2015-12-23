@@ -67,11 +67,23 @@
     <Compile Include="ItemsForms\AddItemCategoryFrm.Designer.cs">
       <DependentUpon>AddItemCategoryFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ItemsForms\AddItemFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemsForms\AddItemFrm.Designer.cs">
+      <DependentUpon>AddItemFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ItemsForms\EditItemCategoryFrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ItemsForms\EditItemCategoryFrm.Designer.cs">
       <DependentUpon>EditItemCategoryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsForms\FrmManageITEM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemsForms\FrmManageITEM.Designer.cs">
+      <DependentUpon>FrmManageITEM.cs</DependentUpon>
     </Compile>
     <Compile Include="ItemsForms\manageItemCategoryFrm.cs">
       <SubType>Form</SubType>
@@ -87,11 +99,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StorsForms\AddStor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StorsForms\AddStor.Designer.cs">
+      <DependentUpon>AddStor.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ItemsForms\AddItemCategoryFrm.resx">
       <DependentUpon>AddItemCategoryFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ItemsForms\AddItemFrm.resx">
+      <DependentUpon>AddItemFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ItemsForms\EditItemCategoryFrm.resx">
       <DependentUpon>EditItemCategoryFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemsForms\FrmManageITEM.resx">
+      <DependentUpon>FrmManageITEM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ItemsForms\manageItemCategoryFrm.resx">
       <DependentUpon>manageItemCategoryFrm.cs</DependentUpon>
@@ -109,6 +133,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="StorsForms\AddStor.resx">
+      <DependentUpon>AddStor.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\DataSources\Xprema.DataLayer.db+ItemCategoryRow.datasource" />
     <None Include="Properties\DataSources\Xprema.DataLayer.db+ItemsRow.datasource" />
     <None Include="Properties\DataSources\Xprema.DataLayer.db+StoreTransactionRow.datasource" />
@@ -136,6 +163,7 @@
       <Name>Xprema.DataLayer</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

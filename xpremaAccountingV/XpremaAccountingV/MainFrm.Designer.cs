@@ -57,7 +57,7 @@
             // 
             // defaultLookAndFeel1
             // 
-            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2013 Light Gray";
+            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Visual Studio 2013 Light";
             // 
             // ribbonControl1
             // 
@@ -90,6 +90,7 @@
             this.ItemBtn.Id = 1;
             this.ItemBtn.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("ItemBtn.LargeGlyph")));
             this.ItemBtn.Name = "ItemBtn";
+            this.ItemBtn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.ItemBtn_ItemClick);
             // 
             // CustomerBtn
             // 
@@ -195,6 +196,7 @@
             this.navBarGroup1});
             this.navBarControl1.Location = new System.Drawing.Point(0, 140);
             this.navBarControl1.Name = "navBarControl1";
+            this.navBarControl1.OptionsNavPane.ExpandedWidth = 140;
             this.navBarControl1.Size = new System.Drawing.Size(140, 233);
             this.navBarControl1.TabIndex = 1;
             this.navBarControl1.Text = "navBarControl1";
