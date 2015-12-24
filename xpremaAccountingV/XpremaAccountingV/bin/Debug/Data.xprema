@@ -18,7 +18,7 @@
     <ItemPayAmount>20</ItemPayAmount>
     <ItemSaleAmount>30</ItemSaleAmount>
     <Description>11111111</Description>
-    <CategoryID>1</CategoryID>
+    <CategoryID>2</CategoryID>
     <ItemNumber>15</ItemNumber>
   </Items>
   <Items>
@@ -29,7 +29,12 @@
     <ItemPayAmount>18</ItemPayAmount>
     <ItemSaleAmount>17</ItemSaleAmount>
     <Description>12</Description>
-    <CategoryID>1</CategoryID>
+    <CategoryID>2</CategoryID>
     <ItemNumber>16</ItemNumber>
   </Items>
+  <Stors>
+    <ID>1</ID>
+    <StoreName>مكاتب الشركة</StoreName>
+    <Description>0022</Description>
+  </Stors>
 </db>

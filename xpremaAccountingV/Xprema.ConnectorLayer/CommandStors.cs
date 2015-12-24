@@ -11,10 +11,10 @@ namespace Xprema.ConnectorLayer
     {
        public bool NewStor(db.StorsRow row)
         {
-            var r = XCommander._db.Stors.NewStorsRow();
-            row.StoreName = row.StoreName;
-            row.Description = row.Description;
-            XCommander._db.Stors.AddStorsRow(r);
+            //var r = XCommander._db.Stors.NewStorsRow();
+            //row.StoreName = row.StoreName;
+            //row.Description = row.Description;
+            XCommander._db.Stors.AddStorsRow(row);
             XCommander.Commit();
             return true;
 

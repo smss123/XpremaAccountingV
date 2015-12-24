@@ -39,8 +39,8 @@
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.StorBtn = new DevExpress.XtraBars.BarButtonItem();
+            this.StoreTransaction = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.المبيعات = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -51,6 +51,7 @@
             this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.navBarControl1 = new DevExpress.XtraNavBar.NavBarControl();
             this.navBarGroup1 = new DevExpress.XtraNavBar.NavBarGroup();
+            this.AddStoreTransactionBTn = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
             this.SuspendLayout();
@@ -70,10 +71,11 @@
             this.barButtonItem2,
             this.barButtonItem3,
             this.barButtonItem4,
-            this.barButtonItem5,
-            this.barButtonItem6});
+            this.StorBtn,
+            this.StoreTransaction,
+            this.AddStoreTransactionBTn});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 9;
+            this.ribbonControl1.MaxItemId = 10;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -124,17 +126,23 @@
             this.barButtonItem4.Id = 6;
             this.barButtonItem4.Name = "barButtonItem4";
             // 
-            // barButtonItem5
+            // StorBtn
             // 
-            this.barButtonItem5.Caption = "المخازن";
-            this.barButtonItem5.Id = 7;
-            this.barButtonItem5.Name = "barButtonItem5";
+            this.StorBtn.Caption = "المخازن";
+            this.StorBtn.Glyph = ((System.Drawing.Image)(resources.GetObject("StorBtn.Glyph")));
+            this.StorBtn.Id = 7;
+            this.StorBtn.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("StorBtn.LargeGlyph")));
+            this.StorBtn.Name = "StorBtn";
+            this.StorBtn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.StorBtn_ItemClick);
             // 
-            // barButtonItem6
+            // StoreTransaction
             // 
-            this.barButtonItem6.Caption = "حركات المخازن";
-            this.barButtonItem6.Id = 8;
-            this.barButtonItem6.Name = "barButtonItem6";
+            this.StoreTransaction.Caption = "حركات المخازن";
+            this.StoreTransaction.Glyph = ((System.Drawing.Image)(resources.GetObject("StoreTransaction.Glyph")));
+            this.StoreTransaction.Id = 8;
+            this.StoreTransaction.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("StoreTransaction.LargeGlyph")));
+            this.StoreTransaction.Name = "StoreTransaction";
+            this.StoreTransaction.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.StoreTransaction_ItemClick);
             // 
             // ribbonPage1
             // 
@@ -178,8 +186,9 @@
             // 
             // ribbonPageGroup3
             // 
-            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem5);
-            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem6);
+            this.ribbonPageGroup3.ItemLinks.Add(this.StorBtn);
+            this.ribbonPageGroup3.ItemLinks.Add(this.AddStoreTransactionBTn);
+            this.ribbonPageGroup3.ItemLinks.Add(this.StoreTransaction);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "المخازن";
             // 
@@ -206,6 +215,15 @@
             this.navBarGroup1.Caption = "القائمة السريعة";
             this.navBarGroup1.Expanded = true;
             this.navBarGroup1.Name = "navBarGroup1";
+            // 
+            // AddStoreTransactionBTn
+            // 
+            this.AddStoreTransactionBTn.Caption = "تعديل المخزون";
+            this.AddStoreTransactionBTn.Glyph = ((System.Drawing.Image)(resources.GetObject("AddStoreTransactionBTn.Glyph")));
+            this.AddStoreTransactionBTn.Id = 9;
+            this.AddStoreTransactionBTn.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("AddStoreTransactionBTn.LargeGlyph")));
+            this.AddStoreTransactionBTn.Name = "AddStoreTransactionBTn";
+            this.AddStoreTransactionBTn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.AddStoreTransactionBTn_ItemClick);
             // 
             // MainFrm
             // 
@@ -236,8 +254,8 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
+        private DevExpress.XtraBars.BarButtonItem StorBtn;
+        private DevExpress.XtraBars.BarButtonItem StoreTransaction;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraBars.Ribbon.RibbonPage المبيعات;
@@ -248,5 +266,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage5;
         private DevExpress.XtraNavBar.NavBarControl navBarControl1;
         private DevExpress.XtraNavBar.NavBarGroup navBarGroup1;
+        private DevExpress.XtraBars.BarButtonItem AddStoreTransactionBTn;
     }
 }

@@ -30,9 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.itemNumberTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.db_ItemsRowBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.descriptionTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.AddBtn = new System.Windows.Forms.Button();
             this.categoryIDLookUpEdit = new DevExpress.XtraEditors.LookUpEdit();
-            this.db_ItemsRowBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.itemCategoryRowBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.itemPayAmountSpinEdit = new DevExpress.XtraEditors.SpinEdit();
             this.itemSaleAmountSpinEdit = new DevExpress.XtraEditors.SpinEdit();
             this.itemUnitTextEdit = new DevExpress.XtraEditors.TextEdit();
@@ -57,15 +60,15 @@
             this.simpleSeparator8 = new DevExpress.XtraLayout.SimpleSeparator();
             this.simpleSeparator9 = new DevExpress.XtraLayout.SimpleSeparator();
             this.simpleSeparator10 = new DevExpress.XtraLayout.SimpleSeparator();
-            this.descriptionTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.itemCategoryRowBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.itemNumberTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.categoryIDLookUpEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemNumberTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.db_ItemsRowBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.descriptionTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryIDLookUpEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemCategoryRowBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemPayAmountSpinEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemSaleAmountSpinEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemUnitTextEdit.Properties)).BeginInit();
@@ -90,10 +93,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.descriptionTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.itemCategoryRowBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.itemNumberTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
             this.SuspendLayout();
             // 
@@ -117,6 +117,28 @@
             this.layoutControl1.Size = new System.Drawing.Size(436, 260);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
+            // 
+            // itemNumberTextEdit
+            // 
+            this.itemNumberTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.db_ItemsRowBindingSource, "ItemNumber", true));
+            this.itemNumberTextEdit.Location = new System.Drawing.Point(12, 13);
+            this.itemNumberTextEdit.Name = "itemNumberTextEdit";
+            this.itemNumberTextEdit.Size = new System.Drawing.Size(339, 20);
+            this.itemNumberTextEdit.StyleController = this.layoutControl1;
+            this.itemNumberTextEdit.TabIndex = 14;
+            // 
+            // db_ItemsRowBindingSource
+            // 
+            this.db_ItemsRowBindingSource.DataSource = typeof(Xprema.DataLayer.db.ItemsRow);
+            // 
+            // descriptionTextEdit
+            // 
+            this.descriptionTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.db_ItemsRowBindingSource, "Description", true));
+            this.descriptionTextEdit.Location = new System.Drawing.Point(12, 187);
+            this.descriptionTextEdit.Name = "descriptionTextEdit";
+            this.descriptionTextEdit.Size = new System.Drawing.Size(339, 20);
+            this.descriptionTextEdit.StyleController = this.layoutControl1;
+            this.descriptionTextEdit.TabIndex = 13;
             // 
             // AddBtn
             // 
@@ -146,9 +168,9 @@
             this.categoryIDLookUpEdit.StyleController = this.layoutControl1;
             this.categoryIDLookUpEdit.TabIndex = 11;
             // 
-            // db_ItemsRowBindingSource
+            // itemCategoryRowBindingSource
             // 
-            this.db_ItemsRowBindingSource.DataSource = typeof(Xprema.DataLayer.db.ItemsRow);
+            this.itemCategoryRowBindingSource.DataSource = typeof(Xprema.DataLayer.db.ItemCategoryRow);
             // 
             // itemPayAmountSpinEdit
             // 
@@ -380,15 +402,6 @@
             this.simpleSeparator10.Name = "simpleSeparator10";
             this.simpleSeparator10.Size = new System.Drawing.Size(1, 25);
             // 
-            // descriptionTextEdit
-            // 
-            this.descriptionTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.db_ItemsRowBindingSource, "Description", true));
-            this.descriptionTextEdit.Location = new System.Drawing.Point(12, 187);
-            this.descriptionTextEdit.Name = "descriptionTextEdit";
-            this.descriptionTextEdit.Size = new System.Drawing.Size(339, 20);
-            this.descriptionTextEdit.StyleController = this.layoutControl1;
-            this.descriptionTextEdit.TabIndex = 13;
-            // 
             // layoutControlItem10
             // 
             this.layoutControlItem10.Control = this.descriptionTextEdit;
@@ -397,19 +410,6 @@
             this.layoutControlItem10.Size = new System.Drawing.Size(416, 24);
             this.layoutControlItem10.Text = "الوصف:";
             this.layoutControlItem10.TextSize = new System.Drawing.Size(70, 13);
-            // 
-            // itemCategoryRowBindingSource
-            // 
-            this.itemCategoryRowBindingSource.DataSource = typeof(Xprema.DataLayer.db.ItemCategoryRow);
-            // 
-            // itemNumberTextEdit
-            // 
-            this.itemNumberTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.db_ItemsRowBindingSource, "ItemNumber", true));
-            this.itemNumberTextEdit.Location = new System.Drawing.Point(12, 13);
-            this.itemNumberTextEdit.Name = "itemNumberTextEdit";
-            this.itemNumberTextEdit.Size = new System.Drawing.Size(339, 20);
-            this.itemNumberTextEdit.StyleController = this.layoutControl1;
-            this.itemNumberTextEdit.TabIndex = 14;
             // 
             // layoutControlItem9
             // 
@@ -433,8 +433,11 @@
             this.Load += new System.EventHandler(this.AddItemFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.categoryIDLookUpEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemNumberTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.db_ItemsRowBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.descriptionTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryIDLookUpEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemCategoryRowBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemPayAmountSpinEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemSaleAmountSpinEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemUnitTextEdit.Properties)).EndInit();
@@ -459,10 +462,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.descriptionTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.itemCategoryRowBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.itemNumberTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
             this.ResumeLayout(false);
 

@@ -105,6 +105,24 @@
     <Compile Include="StorsForms\AddStor.Designer.cs">
       <DependentUpon>AddStor.cs</DependentUpon>
     </Compile>
+    <Compile Include="StorsForms\AddStoreTransactionFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StorsForms\AddStoreTransactionFrm.Designer.cs">
+      <DependentUpon>AddStoreTransactionFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StorsForms\ManageStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StorsForms\ManageStore.Designer.cs">
+      <DependentUpon>ManageStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StorsForms\XtraForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StorsForms\XtraForm1.Designer.cs">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ItemsForms\AddItemCategoryFrm.resx">
       <DependentUpon>AddItemCategoryFrm.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +153,15 @@
     </Compile>
     <EmbeddedResource Include="StorsForms\AddStor.resx">
       <DependentUpon>AddStor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StorsForms\AddStoreTransactionFrm.resx">
+      <DependentUpon>AddStoreTransactionFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StorsForms\ManageStore.resx">
+      <DependentUpon>ManageStore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StorsForms\XtraForm1.resx">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\DataSources\Xprema.DataLayer.db+ItemCategoryRow.datasource" />
     <None Include="Properties\DataSources\Xprema.DataLayer.db+ItemsRow.datasource" />
