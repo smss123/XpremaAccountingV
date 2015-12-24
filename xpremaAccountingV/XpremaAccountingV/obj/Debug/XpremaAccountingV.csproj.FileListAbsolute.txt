@@ -21,3 +21,6 @@ C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\Xpr
 C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\obj\Debug\XpremaAccountingV.StorsForms.ManageStore.resources
 C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\obj\Debug\XpremaAccountingV.StorsForms.AddStoreTransactionFrm.resources
 C:\Users\B-Swo\OneDrive\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\obj\Debug\XpremaAccountingV.StorsForms.XtraForm1.resources
+C:\Users\AbuEhab\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\bin\Debug\XpremaAccountingV.exe.config
+C:\Users\AbuEhab\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\obj\Debug\XpremaAccountingV.exe
+C:\Users\AbuEhab\Documents\GitHub\XpremaAccountingV\xpremaAccountingV\XpremaAccountingV\obj\Debug\XpremaAccountingV.pdb

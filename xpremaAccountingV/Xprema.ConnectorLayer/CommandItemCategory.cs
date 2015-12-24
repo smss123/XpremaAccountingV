@@ -11,10 +11,11 @@ namespace Xprema.ConnectorLayer
             //var r = XCommander._db.ItemCategory.NewItemCategoryRow();
             //row.CategoryName = row.CategoryName;
             //row.Description = row.Description;
+
             XCommander._db.ItemCategory.AddItemCategoryRow(row);
-            XCommander.Commit();
+            XCommander.SaveChanges();
             return true;
-            
+
         }
 
         public bool EditItemCategory(db.ItemCategoryRow row)
@@ -22,7 +23,9 @@ namespace Xprema.ConnectorLayer
             var r = XCommander._db.ItemCategory.FindByID(row.ID);
             r.CategoryName = row.CategoryName;
             r.Description = row.Description;
-            XCommander.Commit();
+
+            XCommander.SaveChanges();
+            r = null;
             return true;
         }
 
@@ -30,13 +33,55 @@ namespace Xprema.ConnectorLayer
         {
             var r = XCommander._db.ItemCategory.FindByID(row.ID);
             r.Delete();
-            XCommander.Commit();
+
+            XCommander.SaveChanges();
+            r = null;
             return true;
         }
 
+
+        #region "     Queries       "
+
+        public db.ItemCategoryRow SingleCategory(int categoryId)
+        {
+            try
+            {
+                var r = XCommander._db.ItemCategory.FindByID(categoryId);
+                return r;
+            }
+            catch (System.Exception)
+            {
+
+                return null;
+            }
+        }
+
+        public db.ItemCategoryRow SingleCategory(string categoryname)
+        {
+            try
+            {
+                var r = XCommander._db.ItemCategory.Single(c => c.CategoryName == categoryname);
+                return r;
+            }
+            catch (System.Exception)
+            {
+
+                return null;
+            }
+        }
         public List<db.ItemCategoryRow> ListCategoryRows()
         {
-            return XCommander._db.ItemCategory.ToList();
+            try
+            {
+                return XCommander._db.ItemCategory.ToList();
+            }
+            catch (System.Exception)
+            {
+
+                return null;
+            }
         }
+
+        #endregion 
     }
 }

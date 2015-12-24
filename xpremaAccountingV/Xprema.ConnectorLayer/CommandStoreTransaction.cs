@@ -10,6 +10,7 @@ namespace Xprema.ConnectorLayer
    public class CommandStoreTransaction
     {
 
+
         public bool NewStor(db.StoreTransactionRow row)
         {
             var r = XCommander._db.StoreTransaction.NewStoreTransactionRow();
@@ -20,7 +21,9 @@ namespace Xprema.ConnectorLayer
             row.Description = row.Description;
             row.StoreID = row.StoreID;
             XCommander._db.StoreTransaction.AddStoreTransactionRow(r);
-            XCommander.Commit();
+
+            XCommander.SaveChanges();
+            r = null;
             return true;
 
         }
@@ -34,7 +37,10 @@ namespace Xprema.ConnectorLayer
             row.QtyOut = row.QtyOut;
             row.Description = row.Description;
             row.StoreID = row.StoreID;
-            XCommander.Commit();
+
+
+            XCommander.SaveChanges();
+            r = null;
             return true;
         }
 
@@ -42,13 +48,32 @@ namespace Xprema.ConnectorLayer
         {
             var r = XCommander._db.StoreTransaction.FindByID(row.ID);
             r.Delete();
-            XCommander.Commit();
+
+
+
+            XCommander.SaveChanges();
+            r = null;
             return true;
         }
 
-        public List<db.StoreTransactionRow> ListCategoryRows()
+        //public List<db.StoreTransactionRow> ListCategoryRows()
+        //{
+        //    return XCommander._db.StoreTransaction.ToList();
+        //}
+
+
+        public List<db.StoreTransactionRow> ListStoreTransactionRows()
         {
-            return XCommander._db.StoreTransaction.ToList();
+            try
+            {
+                return XCommander._db.StoreTransaction.ToList();
+
+            }
+            catch (Exception)
+            {
+
+                return null;
+            }
         }
     }
 }

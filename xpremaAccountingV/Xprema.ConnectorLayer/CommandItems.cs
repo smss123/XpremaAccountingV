@@ -21,7 +21,7 @@ namespace Xprema.ConnectorLayer
             //row.CategoryID = row.CategoryID;
             //row.ItemNumber = row.ItemNumber;
             XCommander._db.Items.AddItemsRow(row);
-            XCommander.Commit();
+            XCommander.SaveChanges();
             return true;
 
         }
@@ -39,7 +39,9 @@ namespace Xprema.ConnectorLayer
             row.ItemNumber = row.ItemNumber;
             r.Description = row.Description;
             row.ItemNumber = row.ItemNumber;
-            XCommander.Commit();
+
+            XCommander.SaveChanges();
+            r = null;
             return true;
         }
 
@@ -47,14 +49,61 @@ namespace Xprema.ConnectorLayer
         {
             var r = XCommander._db.Items.FindByID(row.ID);
             r.Delete();
-            XCommander.Commit();
+
+            XCommander.SaveChanges();
+            r = null;
             return true;
         }
 
-        public List<db.ItemsRow> ListCategoryRows()
+        //public List<db.ItemsRow> ListCategoryRows()
+        //{
+        //    return XCommander._db.Items.ToList();
+        //}
+
+
+        #region  "      Queries           "
+
+        public db.ItemsRow GetOneItemOnley(int itemid)
         {
-            return XCommander._db.Items.ToList();
+            try
+            {
+                var r = XCommander._db.Items.FindByID(itemid);
+                return r;
+            }
+            catch (Exception)
+            {
+
+                return null;
+            }
         }
 
+        public db.ItemsRow GetOneItemOnley(string itemname)
+        {
+            try
+            {
+                var r = XCommander._db.Items.Single(c => c.ItemBasicName == itemname);
+                return r;
+            }
+            catch (Exception)
+            {
+
+                return null;
+            }
+        }
+        public List<db.ItemsRow> ListItemsRows()
+        {
+            try
+            {
+                return XCommander._db.Items.ToList();
+            }
+            catch (Exception)
+            {
+
+                return null;
+            }
+        }
+
+
+        #endregion
     }
 }

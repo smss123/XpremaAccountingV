@@ -9,13 +9,13 @@ namespace Xprema.ConnectorLayer
 {
    public class CommandStors
     {
-       public bool NewStor(db.StorsRow row)
+        public bool NewStor(db.StorsRow row)
         {
-            //var r = XCommander._db.Stors.NewStorsRow();
-            //row.StoreName = row.StoreName;
-            //row.Description = row.Description;
-            XCommander._db.Stors.AddStorsRow(row);
-            XCommander.Commit();
+            var r = XCommander._db.Stors.NewStorsRow();
+            row.StoreName = row.StoreName;
+            row.Description = row.Description;
+            XCommander._db.Stors.AddStorsRow(r);
+            XCommander.SaveChanges();
             return true;
 
         }
@@ -25,7 +25,10 @@ namespace Xprema.ConnectorLayer
             var r = XCommander._db.Stors.FindByID(row.ID);
             r.StoreName = row.StoreName;
             r.Description = row.Description;
-            XCommander.Commit();
+            XCommander.SaveChanges();
+
+
+            r = null;
             return true;
         }
 
@@ -33,14 +36,31 @@ namespace Xprema.ConnectorLayer
         {
             var r = XCommander._db.Stors.FindByID(row.ID);
             r.Delete();
-            XCommander.Commit();
+            XCommander.SaveChanges();
+
+            r = null;
+
             return true;
         }
 
-        public List<db.StorsRow> ListCategoryRows()
+        //public List<db.StorsRow> ListCategoryRows()
+        //{
+        //    return XCommander._db.Stors.ToList();
+        //}
+
+        public List<db.StorsRow> ListStoresRows()
         {
-            return XCommander._db.Stors.ToList();
+            try
+            {
+                return XCommander._db.Stors.ToList();
+            }
+            catch (Exception)
+            {
+
+                return null;
+            }
         }
+
 
     }
 }

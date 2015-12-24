@@ -38,7 +38,14 @@ namespace Xprema.DataLayer
             }
         }
 
-        public static bool Commit()
+        //public static bool Commit()
+        //{
+        //    _db.WriteXml(Path);
+
+        //    return true;
+        //}
+
+        public static bool SaveChanges()
         {
             _db.WriteXml(Path);
 
