@@ -103,7 +103,19 @@ namespace Xprema.ConnectorLayer
             }
         }
 
+        public List<db.ItemsRow> ListItemsRows_ByCategoryId(int categoryid)
+        {
+            try
+            {
+                var lst = XCommander._db.Items.Where (c=> c.CategoryID == categoryid );
+                return lst.ToList();
+            }
+            catch (Exception)
+            {
 
+                return null;
+            }
+        }
         #endregion
     }
 }

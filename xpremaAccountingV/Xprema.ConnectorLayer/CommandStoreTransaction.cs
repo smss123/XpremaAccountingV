@@ -75,5 +75,23 @@ namespace Xprema.ConnectorLayer
                 return null;
             }
         }
+
+        public List<db.StoreTransactionRow> ListStoreTransactionRows_ByStoreId(int storeid)
+        {
+            try
+            {
+
+                var lst = XCommander._db.StoreTransaction.Where (c=> c.StoreID == storeid );
+                return lst.ToList();
+
+            }
+            catch (Exception)
+            {
+
+                return null;
+            }
+        }
+
+
     }
 }
